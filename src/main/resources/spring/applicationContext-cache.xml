@@ -9,5 +9,18 @@
         <contxt:property-placeholder location="classpath:conf.properties"/>
 
     <!--   这里留着 记得来写系统管理和缓冲区配置    -->
+    <bean id="SystemManage" class="com.wangqi.core.SystemManage">
+        <property name="cacheProvider" ref="ehcacheCacheProvider"/>
+    </bean>
+
+    <bean id="simpleCacheProvier" class="com.wangqi.cache.SimpleCacheProvider"/>
+
+    <bean id="ehcacheCacheProvider" class="com.wangqi.cache.EhcacheCacheProvider">
+        <property name="configLocation" value="classpath:ehcache.xml"></property>
+        <property name="cacheName" value="eternalCache"/>
+    </bean>
+
+
+
 
 </beans>
