@@ -16,4 +16,8 @@ public class SystemManage {
     public void setCacheProvider(CacheProvider cacheProvider) {
         SystemManage.cacheProvider = cacheProvider;
     }
+
+    public static SystemManage getInstance() {
+        return instance;
+    }
 }
