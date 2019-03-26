@@ -21,7 +21,7 @@
   <servlet>
     <description>spring mvc servlet</description>
     <servlet-name>springMvc</servlet-name>
-    <servlet-class>com.wangqi.dao.servlet.MultipartDispatcherServlet</servlet-class>
+    <servlet-class>com.wangqi.core.servlet.MultipartDispatcherServlet</servlet-class>
     <init-param>
       <description>spring mvc conf</description>
       <param-name>contextConfigLocation</param-name>

@@ -1,4 +1,4 @@
-package com.wangqi.dao.servlet;
+package com.wangqi.core.servlet;
 
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
