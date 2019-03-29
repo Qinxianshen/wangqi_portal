@@ -3,6 +3,7 @@ package com.wangqi.controller;
 import com.wangqi.core.SystemManage;
 import com.wangqi.entity.page.PageModel;
 import com.wangqi.service.Services;
+import com.wangqi.util.RequestHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -68,7 +69,7 @@ public abstract class BaseController<E extends PageModel> {
      * @param page
      */
     protected void selectListAfter(PageModel page){
-        page.setPagerUrl("selectList");
+        page.setPageUrl("selectList");
     }
     /**
      * 转到编辑页面
