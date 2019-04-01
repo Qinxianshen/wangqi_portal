@@ -68,6 +68,4 @@ public class ArticleDaoImpl implements ArticleDao {
     public Article selectNext(int id) {
         return (Article) dao.selectOne("article.selectNext",id);
     }
-
-
 }

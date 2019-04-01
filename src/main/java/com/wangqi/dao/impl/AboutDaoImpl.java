@@ -12,7 +12,6 @@ import java.util.List;
 
 @Repository("aboutDao")
 public class AboutDaoImpl implements AboutDao {
-
     @Resource
     private BaseDao dao;
 
@@ -27,12 +26,12 @@ public class AboutDaoImpl implements AboutDao {
 
     @Override
     public int delete(About about) {
-        return dao.delete("about.delete",about);
+        return 0;
     }
 
     @Override
     public int update(About about) {
-        return dao.update("about.update",about);
+        return dao.delete("about.update",about);
     }
 
     @Override
@@ -42,7 +41,7 @@ public class AboutDaoImpl implements AboutDao {
 
     @Override
     public PageModel selectPageList(About about) {
-        return dao.selectPageList("about.selectPageList","about.selctCount",about);
+        return dao.selectPageList("about.selectPageList","about.selectPageCount",about);
     }
 
     @Override
@@ -52,11 +51,11 @@ public class AboutDaoImpl implements AboutDao {
 
     @Override
     public int deleteById(int id) {
-        return id;
+        return dao.delete("about.deleteById",id);
     }
 
     @Override
     public About selectById(int id) {
-         return (About) dao.selectOne("about.selectById",id);
+        return (About) dao.selectOne("about.selectById",id);
     }
 }
