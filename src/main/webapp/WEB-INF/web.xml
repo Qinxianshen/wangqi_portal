@@ -11,7 +11,7 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-  
+
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath*:spring/applicationContext.xml</param-value>
@@ -60,16 +60,7 @@
     <error-code>500</error-code>
     <location>/error.jsp</location>
   </error-page>
-  <jsp-config>
-    <taglib>
-      <taglib-uri>http://jsptags.com/tags/navigation/pager</taglib-uri>
-      <taglib-location>/WEB-INF/pager-taglib.tld</taglib-location>
-    </taglib>
 
-  </jsp-config>
-  
-  
-  
-  
-  
+
+
 </web-app>

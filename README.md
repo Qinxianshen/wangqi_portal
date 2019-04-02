@@ -12,3 +12,7 @@
 
 (3)Ehcache是一个用Java实现的使用简单，高速，实现线程安全的缓存管理类库
 
+(2)[配置tomcat 并运行项目](https://blog.csdn.net/qq_38801550/article/details/78187803)
+
+
+

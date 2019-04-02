@@ -5,6 +5,6 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="baseDao" class="com.wangqi.dao.BaseDao">
-        <!--<property name="sqlSesstionFactory" ref="sessionFactory"/>-->
+        <property name="SqlSessionFactory" ref="sessionFactory"/>
     </bean>
 </beans>
